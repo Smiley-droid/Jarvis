@@ -1,5 +1,5 @@
 # Iris
-Assistance local audiau et video
+Assistance local audio et vidéo
 
 1. Chargement des dependance 
 
