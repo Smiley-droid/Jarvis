@@ -62,8 +62,8 @@ with sr.Microphone() as source:
                 engine.runAndWait()
 
             elif "météo" in text_lower:
-                ville = text_lower.split("météo ")[-1].strip() or "Paris"  # Défaut à Paris
-                api_key = "TA_CLE_API"  # Mets ta clé ici !
+                ville = text_lower.split("météo ")[-1].strip() or "Paris"
+                api_key = "TA_CLE_API"  #API KEY
                 url = f"http://api.openweathermap.org/data/2.5/weather?q={ville}&appid={api_key}&units=metric&lang=fr"
                 try:
                     data = requests.get(url).json()
